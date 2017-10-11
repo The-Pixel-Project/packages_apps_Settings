@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2024-2025 The Pixel Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+
+<resources>
+    <style name="PreferenceTheme" parent="@style/PreferenceThemeOverlay.SettingsBase">
+        <item name="customPreferenceStyle">@style/CustomPreference</item>
+    </style>
+
+    <style name="CustomPreference" parent="Preference.Material">
+        <item name="allowDividerAbove">false</item>
+    </style>
+</resources>
