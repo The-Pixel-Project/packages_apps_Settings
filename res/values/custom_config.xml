@@ -22,10 +22,6 @@
     <!-- Max network scan search time in seconds -->
     <integer name="config_network_scan_helper_max_search_time_sec">300</integer>
 
-    <!-- Indicates whether device has a side mounted fingerprint sensor,
-         but a dedicated one, i.e. not embedded in the power button. -->
-    <bool name="config_is_side_fps" translatable="false">false</bool>
-
     <!-- Show battery information -->
     <bool name="config_show_battery_info" translatable="false">true</bool>
 
@@ -34,4 +30,5 @@
 
     <!-- Whether to enable Lineage Fast Charge Prefernece -->
     <bool name="config_lineageFastChargeSupported">false</bool>
+
 </resources>
