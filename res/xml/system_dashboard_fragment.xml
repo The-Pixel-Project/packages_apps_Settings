@@ -46,6 +46,14 @@
         android:fragment="com.android.settings.inputmethod.TouchpadAndMouseSettings"
         settings:controller="com.android.settings.inputmethod.TouchpadAndMouseSettingsController"/>
 
+    <!-- Advanced Settings -->
+    <Preference
+        android:key="advanced_settings"
+        android:title="@string/advanced_settings_title"
+        android:icon="@drawable/ic_advanced_settings"
+        android:order="-252"
+        android:fragment="com.android.settings.custom.advanced.AdvancedSettings"/>
+
     <Preference
         android:key="gesture_settings"
         android:title="@string/gesture_preference_title"
