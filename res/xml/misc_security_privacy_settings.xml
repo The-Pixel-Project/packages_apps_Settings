@@ -56,6 +56,12 @@
             android:summary="@string/no_storage_restrict_summary"
             android:defaultValue="false"/>
 
+        <Preference
+            android:key="clipboard_auto_clear"
+            android:title="@string/clipboard_auto_clear_title"
+            android:summary="@string/clipboard_auto_clear_summary"
+            android:fragment="com.android.settings.custom.privacy.ClipboardAutoClearFragment" />
+
     </PreferenceCategory>
 
 </PreferenceScreen>
