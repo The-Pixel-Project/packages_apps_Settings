@@ -126,7 +126,7 @@
         android:key="cellular_security_network_internet"
         android:title="@string/cellular_security_title"
         android:summary="@string/cellular_security_summary"
-        android:order="30"
+        android:order="35"
         settings:controller="com.android.settings.network.CellularSecurityPreferenceController"/>
 
     <com.android.settings.preferences.SystemSettingSwitchPreference
@@ -136,5 +136,13 @@
         android:icon="@drawable/ic_settings_disable_data"
         android:order="40"
         android:defaultValue="true"/>
+
+    <com.android.settings.preferences.SystemSettingSwitchPreference
+        android:key="show_fourg_icon"
+        android:title="@string/show_fourg_icon_title"
+        android:summary="@string/show_fourg_icon_summary"
+        android:icon="@drawable/ic_settings_lte_to_4g"
+        android:order="45"
+        android:defaultValue="false"/>
 
 </PreferenceScreen>
