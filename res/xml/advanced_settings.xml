@@ -10,5 +10,17 @@
             android:title="@string/pi_spoof_title"
             android:summary="@string/pi_spoof_summary"
             android:defaultValue="true" />
+
+    <PreferenceCategory
+        android:key="advanced_launcher_key"
+        android:title="@string/advanced_launcher_title">
+
+        <com.android.settings.preferences.OverlaySwitchPreference
+            android:key="com.google.android.apps.nexuslauncher.blur.overlay"
+            android:title="@string/launcher_background_blur_title"
+            android:summary="@string/launcher_background_blur_summary"
+            android:defaultValue="true" />
+
+    </PreferenceCategory>
    
 </PreferenceScreen>
