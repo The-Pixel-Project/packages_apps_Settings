@@ -114,8 +114,8 @@ public class Smart5gPreferenceController extends TelephonyTogglePreferenceContro
         if (preference == null) {
             return;
         }
-        final SwitchPreference switchPreference = (SwitchPreference) preference;
-        switchPreference.setEnabled(isUserControlAllowed());
+        final SwitchPreferenceCompat switchPreferenceCompat = (SwitchPreferenceCompat) preference;
+        switchPreferenceCompat.setEnabled(isUserControlAllowed());
     }
 
     @Override
