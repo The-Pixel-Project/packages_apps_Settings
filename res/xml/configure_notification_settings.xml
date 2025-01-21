@@ -228,5 +228,13 @@
             android:summary="@string/heads_up_summary"
             android:defaultValue="false" />
 
+        <!-- Compact heads up -->
+        <com.android.settings.preferences.SystemPropertySwitchPreference
+            android:key="persist.sys.compact_heads_up_notification.always_show"
+            android:defaultValue="false"
+            android:order="25"
+            android:title="@string/compact_heads_up_notifications_enabled_title"
+            android:summary="@string/compact_heads_up_notifications_enabled_summary" />
+
     </PreferenceCategory>
 </PreferenceScreen>
