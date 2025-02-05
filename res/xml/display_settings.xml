@@ -72,6 +72,13 @@
             android:summary="@string/summary_placeholder"
             android:fragment="com.android.settings.display.ScreenTimeoutSettings"
             settings:controller="com.android.settings.display.ScreenTimeoutPreferenceController"/>
+
+       <com.android.settings.preferences.SecureSettingSwitchPreference
+           android:key="pocket_mode_enabled"
+           android:title="@string/pocket_judge_title"
+           android:summary="@string/pocket_judge_summary"
+           android:defaultValue="false"/>
+
     </PreferenceCategory>
 
     <PreferenceCategory
