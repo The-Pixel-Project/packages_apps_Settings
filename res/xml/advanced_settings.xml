@@ -29,6 +29,13 @@
             android:summary="@string/show_squiggle_animation_summary"
             android:defaultValue="true" />
 
+        <com.android.settings.preferences.SystemSettingSwitchPreference
+            android:key="config_enableOngoingProgressBarChip"
+            android:title="@string/ongoing_action_chip_title"
+            android:summary="@string/ongoing_action_chip_summary"
+            android:defaultValue="false"
+            android:persistent="true"/>
+
     </PreferenceCategory>
 
     <PreferenceCategory
