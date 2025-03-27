@@ -220,21 +220,37 @@
             android:summary="@string/notification_assistant_summary"
             settings:controller="com.android.settings.notification.NotificationAssistantPreferenceController"/>
 
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="heads_up_category"
+        android:title="@string/heads_up">
+
         <!-- Heads up -->
         <com.android.settings.preferences.GlobalSettingSwitchPreference
             android:key="heads_up_notifications_enabled"
-            android:order="25"
+            android:order="29"
             android:title="@string/heads_up_title"
             android:summary="@string/heads_up_summary"
             android:defaultValue="false" />
+
+        <!-- Less Boring Heads Up -->
+        <com.android.settings.preferences.SystemSettingSwitchPreference
+            android:key="less_boring_heads_up"
+            android:order="30"
+            android:title="@string/less_boring_heads_up_title"
+            android:summary="@string/less_boring_heads_up_summary"
+            android:defaultValue="false"
+            android:dependency="heads_up_notifications_enabled" />
 
         <!-- Compact heads up -->
         <com.android.settings.preferences.SystemPropertySwitchPreference
             android:key="persist.sys.compact_heads_up_notification.always_show"
             android:defaultValue="false"
-            android:order="25"
+            android:order="31"
             android:title="@string/compact_heads_up_notifications_enabled_title"
             android:summary="@string/compact_heads_up_notifications_enabled_summary" />
 
     </PreferenceCategory>
+
 </PreferenceScreen>
