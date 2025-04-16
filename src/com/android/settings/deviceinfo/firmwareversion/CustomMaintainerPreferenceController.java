@@ -17,6 +17,7 @@
 package com.android.settings.deviceinfo.firmwareversion;
 
 import android.content.Context;
+import android.content.res.Resources;
 import android.os.SystemProperties;
 import android.text.TextUtils;
 
@@ -40,7 +41,11 @@ public class CustomMaintainerPreferenceController extends BasePreferenceControll
 
     public CharSequence getSummary() {
         String maintainer = SystemProperties.get(MAINTAINER_PROPERTY,
-                this.mContext.getString(R.string.device_info_default));
+                mContext.getResources().getString(R.string.custom_maintainer));
+
+        if (TextUtils.isEmpty(maintainer)) {
+            maintainer = mContext.getString(R.string.device_info_default);
+        }
         return maintainer;
     }
 }
