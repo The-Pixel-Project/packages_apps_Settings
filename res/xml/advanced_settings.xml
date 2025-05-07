@@ -8,6 +8,13 @@
         android:key="general_category_key"
         android:title="@string/general_category">
 
+        <!-- Advanced Reboot -->
+        <com.android.settings.preferences.SystemSettingSwitchPreference
+            android:key="advanced_reboot"
+            android:title="@string/global_actions_advanced_reboot_title"
+            android:summary="@string/global_actions_advanced_reboot_summary"
+            android:defaultValue="false" />
+
         <!-- Google Play Integrity -->
         <com.android.settings.preferences.SystemPropertySwitchPreference
             android:key="persist.sys.pihooks.pi"
